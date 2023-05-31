@@ -21,52 +21,78 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <img src="шлях_до_логотипу" alt="Логотип" />
-        <ul>
-          <li><a href="#hero">Головна</a></li>
-          <li><a href="#services">Послуги</a></li>
-          <li><a href="#about">Про нас</a></li>
-          <li><a href="#prices">Ціни</a></li>
-          <li><a href="#testimonials">Відгуки</a></li>
-          <li><a href="#contact">Контакти</a></li>
+    <header class="header">
+      <nav class="header__nav">
+        <img class="header__logo" src="https://via.placeholder.com/60x50" alt="Логотип" />
+        <ul class="header__menu">
+          <li class="header__menu-item"><a class="header__menu-link" href="#hero">Головна</a></li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#services">Послуги</a>
+          </li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#about">Про нас</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#prices">Ціни</a></li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#testimonials">Відгуки</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#contact">Контакти</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    <section id="hero">
-      <h1>Ласкаво просимо до сервісу ремонту комп'ютерної техніки</h1>
-      <a href="#contact" class="btn">Зв'язатися з нами</a>
+    <section id="hero" class="hero">
+      <h1 class="hero__title">Ласкаво просимо до сервісу ремонту комп'ютерної техніки</h1>
+      <a href="#contact" class="btn hero__cta">Зв'язатися з нами</a>
     </section>
 
-    <section id="services">
-      <h2>Наші послуги</h2>
-      <ul>
-        <li>
-          <h3>Ремонт комп'ютерів</h3>
-          <p>
+    <section id="services" class="services">
+      <h2 class="services__title">Наші послуги</h2>
+      <ul class="services__list">
+        <li class="services__item">
+          <img
+            src="https://via.placeholder.com/400x300"
+            alt="Ремонт комп'ютерів"
+            class="services__image"
+          />
+          <h3 class="services__item-title">Ремонт комп'ютерів</h3>
+          <p class="services__item-description">
             Ми здійснюємо комплексний ремонт комп'ютерів, включаючи діагностику, заміну компонентів
             та встановлення програмного забезпечення.
           </p>
         </li>
-        <li>
-          <h3>Відновлення даних</h3>
-          <p>
+        <li class="services__item">
+          <img
+            src="https://via.placeholder.com/400x300"
+            alt="Відновлення даних"
+            class="services__image"
+          />
+          <h3 class="services__item-title">Відновлення даних</h3>
+          <p class="services__item-description">
             Наші фахівці відновлюють втрачені дані з жорстких дисків, флеш-накопичувачів та інших
             пристроїв зберігання.
           </p>
         </li>
-        <li>
-          <h3>Виправлення проблем зі збоєм системи</h3>
-          <p>
+        <li class="services__item">
+          <img
+            src="https://via.placeholder.com/400x300"
+            alt="Виправлення проблем зі збоєм системи"
+            class="services__image"
+          />
+          <h3 class="services__item-title">Виправлення проблем зі збоєм системи</h3>
+          <p class="services__item-description">
             Ми допомагаємо вирішувати проблеми зі збоєм операційних систем, включаючи повільну
             роботу, помилки та затримки.
           </p>
         </li>
-        <li>
-          <h3>Настроювання мережі</h3>
-          <p>
+        <li class="services__item">
+          <img
+            src="https://via.placeholder.com/400x300"
+            alt="Настроювання мережі"
+            class="services__image"
+          />
+          <h3 class="services__item-title">Настроювання мережі</h3>
+          <p class="services__item-description">
             Наші спеціалісти допоможуть налаштувати локальну мережу або Wi-Fi, забезпечуючи
             стабільне підключення до Інтернету.
           </p>
@@ -74,23 +100,23 @@
       </ul>
     </section>
 
-    <section id="about">
-      <h2>Чому обирають нас</h2>
-      <ul>
-        <li>Високоякісний ремонт комп'ютерної техніки</li>
-        <li>Досвідчені фахівці з багаторічним досвідом</li>
-        <li>Швидка та ефективна обробка замовлень</li>
-        <li>Конкурентні ціни та гнучкі умови співпраці</li>
-        <li>Професійне обладнання та інструменти</li>
+    <section id="about" class="about">
+      <h2 class="about__title">Чому обирають нас</h2>
+      <ul class="about__list">
+        <li class="about__item">Високоякісний ремонт комп'ютерної техніки</li>
+        <li class="about__item">Досвідчені фахівці з багаторічним досвідом</li>
+        <li class="about__item">Швидка та ефективна обробка замовлень</li>
+        <li class="about__item">Конкурентні ціни та гнучкі умови співпраці</li>
+        <li class="about__item">Професійне обладнання та інструменти</li>
       </ul>
-      <p>
+      <p class="about__description">
         Ми є провідним сервісним центром з ремонту комп'ютерної техніки в Кременчуці. Наша команда
         виконує ремонт різноманітної техніки, включаючи комп'ютери, ноутбуки, принтери, монітори та
         інші пристрої.
       </p>
-      <img src="https://via.placeholder.com/300x200" alt="Майстер" />
-      <p>Наш майстер з багаторічним досвідом</p>
-      <p>
+      <img src="https://via.placeholder.com/300x200" alt="Майстер" class="about__image" />
+      <p class="about__subtitle">Наш майстер з багаторічним досвідом</p>
+      <p class="about__description">
         Наш майстер, з багаторічним досвідом у галузі ремонту комп'ютерної техніки, гарантує якісне
         виконання робіт та відновлення роботи вашого обладнання у найкоротший термін. Ми завжди
         готові надати вам професійні поради та допомогу з будь-якими питаннями, пов'язаними з
@@ -98,82 +124,94 @@
       </p>
     </section>
 
-    <section id="prices">
-      <h2>Ціни</h2>
-      <ul>
-        <li>
-          <h3>Ремонт комп'ютерів</h3>
-          <p>Ціна за годину: $50</p>
+    <section id="prices" class="prices">
+      <h2 class="prices__title">Ціни</h2>
+      <ul class="prices__list">
+        <li class="prices__item">
+          <h3 class="prices__service-title">Ремонт комп'ютерів</h3>
+          <p class="prices__service-price">Ціна за годину: $50</p>
         </li>
-        <li>
-          <h3>Відновлення даних</h3>
-          <p>Ціна за послугу: $100</p>
+        <li class="prices__item">
+          <h3 class="prices__service-title">Відновлення даних</h3>
+          <p class="prices__service-price">Ціна за послугу: $100</p>
         </li>
-        <li>
-          <h3>Виправлення проблем зі збоєм системи</h3>
-          <p>Ціна за послугу: $80</p>
+        <li class="prices__item">
+          <h3 class="prices__service-title">Виправлення проблем зі збоєм системи</h3>
+          <p class="prices__service-price">Ціна за послугу: $80</p>
         </li>
-        <li>
-          <h3>Настроювання мережі</h3>
-          <p>Ціна за послугу: $60</p>
+        <li class="prices__item">
+          <h3 class="prices__service-title">Настроювання мережі</h3>
+          <p class="prices__service-price">Ціна за послугу: $60</p>
         </li>
-        <li>
-          <h3>Знижка на ремонт принтерів</h3>
-          <p>Отримайте 10% знижки на ремонт принтерів до кінця місяця!</p>
+        <li class="prices__item">
+          <h3 class="prices__service-title">Знижка на ремонт принтерів</h3>
+          <p class="prices__service-discount">
+            Отримайте 10% знижки на ремонт принтерів до кінця місяця!
+          </p>
         </li>
       </ul>
     </section>
 
-    <section id="testimonials">
-      <h2>Відгуки</h2>
-      <div class="testimonial-slider">
-        <div class="testimonial">
-          <p>
+    <section id="testimonials" class="testimonials">
+      <h2 class="testimonials__title">Відгуки</h2>
+      <div class="testimonial-slider testimonials__slider">
+        <div class="testimonial testimonials__item">
+          <p class="testimonial__content">
             Дуже задоволений роботою сервісу! Майстри були дуже професійні і швидко виправили
             проблему з моїм комп'ютером.
           </p>
-          <p class="author">- Іван Петрович</p>
+          <p class="testimonial__author">- Іван Петрович</p>
         </div>
-        <div class="testimonial">
-          <p>
+        <div class="testimonial testimonials__item">
+          <p class="testimonial__content">
             Велике спасибі команді сервісу за швидкий і якісний ремонт мого ноутбука. Рекомендую їх
             всім!
           </p>
-          <p class="author">- Марія Василівна</p>
+          <p class="testimonial__author">- Марія Василівна</p>
         </div>
         <!-- Додайте інші відгуки тут -->
       </div>
 
-      <form>
-        <h3>Додати відгук</h3>
-        <label for="name">Ім'я:</label>
-        <input type="text" id="name" name="name" required />
-        <label for="message">Відгук:</label>
-        <textarea id="message" name="message" required></textarea>
-        <button type="submit">Надіслати</button>
+      <form class="testimonial-form">
+        <h3 class="testimonial-form__title">Додати відгук</h3>
+        <label for="name" class="testimonial-form__label">Ім'я:</label>
+        <input type="text" id="name" name="name" required class="testimonial-form__input" />
+        <label for="message" class="testimonial-form__label">Відгук:</label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          class="testimonial-form__textarea"
+        ></textarea>
+        <button type="submit" class="testimonial-form__button">Надіслати</button>
       </form>
     </section>
 
-    <section id="contact">
-      <h2>Контакти</h2>
-
+    <section id="contact" class="contact">
+      <h2 class="contact__title">Контакти</h2>
       <div class="contact-info">
         <p><strong>Email:</strong> example@example.com</p>
         <p><strong>Телефон:</strong> +1 123 456 7890</p>
 
         <div class="social-media">
-          <a href="#" target="_blank"><img src="link-to-social-media-icon" alt="Facebook" /></a>
-          <a href="#" target="_blank"><img src="link-to-social-media-icon" alt="Twitter" /></a>
-          <a href="#" target="_blank"><img src="link-to-social-media-icon" alt="Instagram" /></a>
+          <a href="#" target="_blank" class="social-media__link"
+            ><img src="link-to-social-media-icon" alt="Facebook"
+          /></a>
+          <a href="#" target="_blank" class="social-media__link"
+            ><img src="link-to-social-media-icon" alt="Twitter"
+          /></a>
+          <a href="#" target="_blank" class="social-media__link"
+            ><img src="link-to-social-media-icon" alt="Instagram"
+          /></a>
         </div>
       </div>
 
       <div class="contact-form">
-        <h3>Залиште свій номер телефону, і ми з вами зв'яжемося</h3>
+        <h3 class="contact-form__title">Залиште свій номер телефону, і ми з вами зв'яжемося</h3>
         <form>
-          <label for="phone">Номер телефону:</label>
-          <input type="tel" id="phone" name="phone" required />
-          <button type="submit">Відправити</button>
+          <label for="phone" class="contact-form__label">Номер телефону:</label>
+          <input type="tel" id="phone" name="phone" required class="contact-form__input" />
+          <button type="submit" class="contact-form__button">Відправити</button>
         </form>
       </div>
 
@@ -192,33 +230,42 @@
 
     <footer>
       <div class="contact-info">
-        <h3>Контакти</h3>
-        <p>Адреса: 123 вулиця, місто, країна</p>
-        <p>Телефон: +12 345 6789</p>
-        <p>Email: info@example.com</p>
+        <h3 class="contact-info__title">Контакти</h3>
+        <p class="contact-info__address">Адреса: 123 вулиця, місто, країна</p>
+        <p class="contact-info__phone">Телефон: +12 345 6789</p>
+        <p class="contact-info__email">Email: info@example.com</p>
       </div>
       <div class="social-media">
-        <h3>Соціальні мережі</h3>
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/ваша-сторінка" target="_blank"
+        <h3 class="social-media__title">Соціальні мережі</h3>
+        <ul class="social-media__list">
+          <li class="social-media__item">
+            <a
+              href="https://www.facebook.com/ваша-сторінка"
+              target="_blank"
+              class="social-media__link"
               ><img src="шлях-до-іконки-facebook" alt="Facebook"
             /></a>
           </li>
-          <li>
-            <a href="https://www.twitter.com/ваша-сторінка" target="_blank"
+          <li class="social-media__item">
+            <a
+              href="https://www.twitter.com/ваша-сторінка"
+              target="_blank"
+              class="social-media__link"
               ><img src="шлях-до-іконки-twitter" alt="Twitter"
             /></a>
           </li>
-          <li>
-            <a href="https://www.instagram.com/ваша-сторінка" target="_blank"
+          <li class="social-media__item">
+            <a
+              href="https://www.instagram.com/ваша-сторінка"
+              target="_blank"
+              class="social-media__link"
               ><img src="шлях-до-іконки-instagram" alt="Instagram"
             /></a>
           </li>
         </ul>
       </div>
       <div class="footer-logo">
-        <img src="шлях-до-логотипу" alt="Логотип" />
+        <img src="https://via.placeholder.com/60x50" alt="Логотип" />
       </div>
     </footer>
   </body>
