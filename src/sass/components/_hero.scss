@@ -1,0 +1,32 @@
+.hero {
+    background-image: url("https://via.placeholder.com/1200x1000");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__title {
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hero__cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.hero__cta:hover {
+    background-color: #990000;
+}

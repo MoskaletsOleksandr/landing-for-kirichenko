@@ -1,1 +1,14 @@
-@import './base/reset'
+@import './base/reset';
+@import './base/common';
+@import './utils/mixins';
+
+@import './components/container';
+
+@import './components/header';
+@import './components/hero';
+@import './components/services';
+@import './components/about';
+@import './components/prices';
+@import './components/testimonials';
+@import './components/contact';
+@import './components/footer';
