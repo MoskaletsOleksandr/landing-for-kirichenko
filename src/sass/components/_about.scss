@@ -1,8 +1,17 @@
 .about__columns {
-    display: flex;
-    justify-content: space-between;
+    // display: flex;
+    // justify-content: space-between;
     align-items: center;
     gap: 20px;
+
+    @include tablet {
+        display: flex;
+        justify-content: space-around;
+    }
+        
+    @include desktop {
+        justify-content: space-between;
+    }
 }
 
 .about__column {
