@@ -28,7 +28,7 @@ input:-webkit-autofill {
 body {
   font-family: "Roboto", -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
   background-color: var(--primary-background-color);
-  color: var(--primary-text-color);
+  color: black;
   font-size: 14px;
   letter-spacing: 0.03em;
 }
@@ -67,6 +67,10 @@ body {
 .header {
   background-color: #f2f2f2;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header__nav {
@@ -102,9 +106,11 @@ body {
 }
 
 .hero {
-  background-image: url("https://via.placeholder.com/1200x1000");
-  background-size: cover;
+  background-color: #c4c4c4;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.9)), url(../src/images/keyboard.jpg);
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -112,22 +118,54 @@ body {
   align-items: center;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 60vh;
+  }
+}
 
 .hero__title {
   color: #fff;
-  font-size: 32px;
-  margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
 }
 
 .hero__cta {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 8px 16px;
   background-color: #ff0000;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.3s ease;
+}
+@media screen and (min-width: 768px) {
+  .hero__cta {
+    padding: 10px 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero__cta {
+    padding: 12px 24px;
+  }
 }
 
 .hero__cta:hover {
@@ -139,22 +177,62 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (min-width: 768px) {
+  .services__list {
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__list {
+    justify-content: space-between;
+  }
+}
 
 .services__item {
-  flex-basis: calc(25% - 20px);
+  flex-basis: calc(100% - 20px);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .services__item {
+    flex-basis: calc(50% - 20px);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__item {
+    flex-basis: calc(25% - 20px);
+  }
 }
 
 .services__image {
   width: 100%;
   height: auto;
 }
+@media screen and (min-width: 768px) {
+  .services__image {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__image {
+    width: 100%;
+  }
+}
 
 .services__item-title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .services__item-title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .services__item-title {
+    font-size: 24px;
+  }
 }
 
 .services__item-description {

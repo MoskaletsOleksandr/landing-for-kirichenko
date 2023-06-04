@@ -2,23 +2,55 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include tablet {
+        justify-content: space-around;
+    }
+
+    @include desktop {
+        justify-content: space-between;
+    }
 }
 
 .services__item {
-    flex-basis: calc(25% - 20px);
+    flex-basis: calc(100% - 20px);
     margin-bottom: 20px;
+
+    @include tablet {
+        flex-basis: calc(50% - 20px);
+    }
+
+    @include desktop {
+        flex-basis: calc(25% - 20px);
+    }
 }
 
 .services__image {
     width: 100%;
     height: auto;
+
+    @include tablet {
+        width: 80%;
+    }
+
+    @include desktop {
+        width: 100%;
+    }
 }
 
 .services__item-title {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 5px;
+
+    @include tablet {
+        font-size: 20px;
+    }
+
+    @include desktop {
+        font-size: 24px;
+    }
 }
 
 .services__item-description {
